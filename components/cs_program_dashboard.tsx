@@ -606,3 +606,4 @@ const toggleDay = (day: number) => {
       </div>
     </div>
   );
+}
