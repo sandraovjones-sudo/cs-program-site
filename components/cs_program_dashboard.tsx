@@ -434,13 +434,6 @@ const toggleDay = (day: number) => {
     }
   ];
 
-    if (completedDays.includes(day)) {
-      setCompletedDays(completedDays.filter(d => d !== day));
-    } else {
-      setCompletedDays([...completedDays, day]);
-    }
-  };
-
   const currentWeek = weeks.find(w => w.week === activeWeek);
   const totalDays = 30;
   const completionRate = Math.round((completedDays.length / totalDays) * 100);
