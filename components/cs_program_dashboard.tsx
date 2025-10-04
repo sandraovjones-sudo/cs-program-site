@@ -6,9 +6,12 @@ import { CheckCircle, Circle, Calendar, Target, TrendingUp, FileText, Users, Bar
 export default function CSProgramDashboard() {
   const [activeWeek, setActiveWeek] = useState(1);
   const [completedDays, setCompletedDays] = useState<number[]>([]);
-  // ...rest of your component
-}
 
+const toggleDay = (day: number) => {
+    setCompletedDays(prev =>
+      prev.includes(day) ? prev.filter(d => d !== day) : [...prev, day]
+    );
+  };
   const weeks = [
     {
       week: 1,
