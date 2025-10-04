@@ -606,6 +606,3 @@ const toggleDay = (day: number) => {
       </div>
     </div>
   );
-};
-
-export default CSProgramDashboard;
