@@ -1,4 +1,4 @@
-import CSProgramDashboard from "../components/cs_program_dashboard";
+import CSProgramDashboard from "../components/CSProgramDashboard";
 
 export default function Page() {
   return <CSProgramDashboard />;
