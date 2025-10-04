@@ -434,7 +434,6 @@ const toggleDay = (day: number) => {
     }
   ];
 
-  const toggleDay = (day) => {
     if (completedDays.includes(day)) {
       setCompletedDays(completedDays.filter(d => d !== day));
     } else {
