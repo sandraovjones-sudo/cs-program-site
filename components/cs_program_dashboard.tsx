@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
-import { CheckCircle, Circle, Calendar, Target, TrendingUp, FileText, Users, BarChart3 } from 'lucide-react';
+"use client";
 
-const CSProgramDashboard = () => {
+import { useState } from "react";
+import { CheckCircle, Circle, Calendar, Target, TrendingUp, FileText, Users, BarChart3 } from "lucide-react";
+
+export default function CSProgramDashboard() {
   const [activeWeek, setActiveWeek] = useState(1);
-  const [completedDays, setCompletedDays] = useState([]);
+  const [completedDays, setCompletedDays] = useState<number[]>([]);
+  // ...rest of your component
+}
 
   const weeks = [
     {
@@ -13,16 +17,16 @@ const CSProgramDashboard = () => {
       days: [
         {
           day: 1,
-          title: "Portfolio Analysis & Prioritization",
+          title: "Portfolio Analysis & Prioritisation",
           time: "90 min",
           tasks: [
-            "Analyze TechCo's 15-account portfolio (5 Enterprise, 7 Mid-Market, 3 SMB)",
-            "Create account prioritization matrix using ARR, health score, growth potential, strategic value",
+            "Analyse TechCo's 15-account portfolio (5 Enterprise, 7 Mid-Market, 3 SMB)",
+            "Create account prioritisation matrix using ARR, health score, growth potential, strategic value",
             "Identify top 5 accounts requiring immediate attention"
           ],
-          deliverable: "Account Prioritization Matrix (Excel/Google Sheets)",
+          deliverable: "Account Prioritisation Matrix (Excel/Google Sheets)",
           tools: ["Excel", "HubSpot"],
-          aiUse: "Use ChatGPT to generate prioritization framework criteria"
+          aiUse: "Use ChatGPT to generate prioritisation framework criteria"
         },
         {
           day: 2,
@@ -57,7 +61,7 @@ const CSProgramDashboard = () => {
           tasks: [
             "Design multi-factor health score model (usage, engagement, sentiment, business outcomes)",
             "Weight criteria: Product adoption 30%, Support tickets 20%, Executive engagement 25%, Payment history 15%, NPS 10%",
-            "Apply to entire portfolio and categorize: Green (80-100), Yellow (60-79), Red (<60)"
+            "Apply to entire portfolio and categorise: Green (80-100), Yellow (60-79), Red (<60)"
           ],
           deliverable: "Health Score Dashboard",
           tools: ["Excel", "Tableau"],
